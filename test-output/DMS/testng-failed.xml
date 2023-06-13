@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DMS]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="https://rise.fairsketch.com/signin"/>
+  <parameter name="browserType" value="chrome"/>
+  <test thread-count="5" name="sample test(failed)">
+    <classes>
+      <class name="CodePom.testcase.SignInTest">
+        <methods>
+          <include name="signIn"/>
+          <include name="openAdd"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="openProjectPage"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- CodePom.testcase.SignInTest -->
+    </classes>
+  </test> <!-- sample test(failed) -->
+</suite> <!-- Failed suite [DMS] -->

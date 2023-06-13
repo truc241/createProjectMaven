@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DMS">
+    <parameter name="browserType" value="chrome"></parameter>
+     <parameter name="appURL" value="https://rise.fairsketch.com/signin"></parameter>
+
+  <test name="DMS">
+
+      <classes>
+          <class name="CodePom.testcase.SignInTest">
+            <methods>
+                     <include name="signIn"/>
+                     <include name="openProjectPage"/>
+                     <include name="checkSearchTableColumn"/>
+
+                </methods>
+             </class>
+         </classes>
+     </test>
+ </suite>
